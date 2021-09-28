@@ -26,6 +26,7 @@ runs:
         
         json_data=$(echo -e "$githubjson")
         echo $json_data >> data.json
+        
       shell: bash
     
     - name: Creating Environment Variables
