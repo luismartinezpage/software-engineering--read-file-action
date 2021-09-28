@@ -11,7 +11,7 @@ jobs:
     - uses: ./
       name: Creating Enviroment Variables
       with: 
-        file-path: './github/config/ci-config.json'
+        file-path: '.github/config/ci-config.json'
         level: '.'
         
     - name: "Checking Variables..."
