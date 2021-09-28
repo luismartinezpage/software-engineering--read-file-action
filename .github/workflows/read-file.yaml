@@ -1,0 +1,18 @@
+name: Create-Environment-Variables
+on:
+  push: 
+    branches: 
+      - main
+jobs:
+  readfile:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ./
+      with: 
+        file-path: './github/config/ci-config.json'
+        level: './'
+        
+    - name: "Checking variables..."
+      run: |
+        echo Checking variables readfiles...

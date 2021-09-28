@@ -1,0 +1,41 @@
+name: 'Read_File_Content'
+description: 'Read the configuration file and insert the properties as variables of environment.'
+inputs:
+  file-path: 
+    description: 'File Path'
+    required: false
+    default: './ci-config.json'
+  level:
+    description: 'Level where you want get info'
+    default: './'
+    required: false
+runs:
+  using: "composite"
+  steps: 
+    - name: Reading file
+      run: |
+        filepath="${{inputs.file-path}}"
+        extension="${filepath##*.}"
+        
+        if [ "$extension" == "json" ]; then
+            githubjson="$(jq -c '${{inputs.level}}' $filepath)"   
+        else
+            echo "Not valid format, you must use json file"
+            exit -1
+        fi
+        
+        echo json_data=`$(echo -e "$githubjson")` >> data.json
+
+      shell: bash
+    
+    - name: Creating Environment Variables
+      run: |
+        import json
+        import os
+
+        with open('data.json') as file:
+            data = json.load(file)
+            for key, value in data.items():
+                os.system('echo '+key+'='+value+' >> $GITHUB_ENV')
+                
+      shell: python

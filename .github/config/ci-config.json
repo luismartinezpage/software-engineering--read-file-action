@@ -1,0 +1,50 @@
+{
+	"dev":	{
+		"AWS_ACCOUNT_ID": "858599873024",
+		"AWS_CODEARTIFACT_DOMAIN": "iberia",
+		"BUCKET_REPOSITORY": "iberia-java-releases-store",
+		"ARTIFACT_REPOSITORY_CENTRAL_NAME": "iberia-java-releases-store",
+		"ARTIFACT_REPOSITORY_CENTRAL_URL": "https://iberia-858599873024.d.codeartifact.eu-west-1.amazonaws.com/maven/maven-central-store/",
+		"LIBRARY_ARTIFACT_REPOSITORY_NAME": "java-library-store",
+		"LIBRARY_ARTIFACT_REPOSITORY_URL":"https://iberia-858599873024.d.codeartifact.eu-west-1.amazonaws.com/maven/java-library-store/",		
+		"AWS_REGION": "eu-west-1",
+		"JAVA_JDK_VERSION": "8",
+		"JAVA_DISTRIBUTION": "adopt",
+		"SUFIX_ARTIFACT_VERSION": "SNAPSHOT",		
+		"DEPLOYMENT_GROUP_NAME": "Dev-PoC",
+		"DEPLOYMENT_CONFIG_NAME": "CodeDeployDefault.OneAtATime",
+		"DEPLOYMENT_URL": "https://www.miweb.dev.com"
+	},
+	"pre": {
+		"AWS_ACCOUNT_ID": "858599873024",
+		"AWS_CODEARTIFACT_DOMAIN": "iberia",
+		"BUCKET_REPOSITORY": "iberia-java-releases-store",
+		"ARTIFACT_REPOSITORY_CENTRAL_NAME": "iberia-java-releases-store",
+		"ARTIFACT_REPOSITORY_CENTRAL_URL": "https://iberia-858599873024.d.codeartifact.eu-west-1.amazonaws.com/maven/maven-central-store/",
+		"LIBRARY_ARTIFACT_REPOSITORY_NAME": "java-library-store",
+		"LIBRARY_ARTIFACT_REPOSITORY_URL":"https://iberia-858599873024.d.codeartifact.eu-west-1.amazonaws.com/maven/java-library-store/",		
+		"AWS_REGION": "eu-west-1",
+		"JAVA_JDK_VERSION": "8",
+		"JAVA_DISTRIBUTION": "adopt",
+		"SUFIX_ARTIFACT_VERSION": "RC",		
+		"DEPLOYMENT_GROUP_NAME": "Pre-PoC",
+		"DEPLOYMENT_CONFIG_NAME": "CodeDeployDefault.OneAtATime",
+		"DEPLOYMENT_URL": "https://www.miweb.pre.com"
+	},
+	"prod": {
+		"AWS_ACCOUNT_ID": "858599873024",
+		"AWS_CODEARTIFACT_DOMAIN": "iberia",
+		"BUCKET_REPOSITORY": "iberia-java-releases-store",
+		"ARTIFACT_REPOSITORY_CENTRAL_NAME": "iberia-java-releases-store",
+		"ARTIFACT_REPOSITORY_CENTRAL_URL": "https://iberia-858599873024.d.codeartifact.eu-west-1.amazonaws.com/maven/maven-central-store/",
+		"LIBRARY_ARTIFACT_REPOSITORY_NAME": "java-library-store",
+		"LIBRARY_ARTIFACT_REPOSITORY_URL":"https://iberia-858599873024.d.codeartifact.eu-west-1.amazonaws.com/maven/java-library-store/",		
+		"AWS_REGION": "eu-west-1",
+		"JAVA_JDK_VERSION": "8",
+		"JAVA_DISTRIBUTION": "adopt",
+		"SUFIX_ARTIFACT_VERSION": "",		
+		"DEPLOYMENT_GROUP_NAME": "Pro-PoC",
+		"DEPLOYMENT_CONFIG_NAME": "CodeDeployDefault.OneAtATime",
+		"DEPLOYMENT_URL": "https://www.miweb.Pro.com"
+	}
+}
