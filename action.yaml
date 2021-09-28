@@ -24,7 +24,7 @@ runs:
             exit -1
         fi
         
-        echo json_data=`$(echo -e "$githubjson")` >> data.json
+        echo json_data=$(echo -e "$githubjson") >> data.json
 
       shell: bash
     

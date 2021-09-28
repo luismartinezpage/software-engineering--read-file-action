@@ -1,4 +1,4 @@
-## [Repository Name]
+## Read Json File Action
 
 Read the properties of the json config file and insert it as environment variables in the workflow.
 
