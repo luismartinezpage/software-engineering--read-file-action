@@ -12,7 +12,7 @@ jobs:
       name: Creating Enviroment Variables
       with: 
         file-path: '.github/config/ci-config.json'
-        level: '.dev'
+        level: '.pro'
         
     - name: "Checking Variables..."
       run: |
